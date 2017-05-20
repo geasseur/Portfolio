@@ -1,7 +1,15 @@
 h1{
-  text-align: center;
+
 }
 
 #listFooter{
   list-style-type: none;
+}
+
+footer>p{
+  text-align: center;
+}
+
+#lienNav>li>a{
+  font-size: 2em;
 }
