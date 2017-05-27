@@ -48,12 +48,15 @@
 
       <main>
         <section class="container">
+
+          <!--Section Leboncoin-->
             <div class="row row-margin-bottom">
+
               <div class="col-12 no-padding lib-item" data-category="view">
                 <div class="lib-panel">
                   <div class="row box-shadow">
                     <div class="col-md-6">
-                      <img class="lib-img-show" src="../img/travaux/web/imgGalerie/leboncoin.png">
+                      <img class="lib-img-show" id="boncoin" src="../img/travaux/web/imgGalerie/leboncoin.png">
                     </div>
                     <div class="col-md-6">
                       <div class="lib-row lib-header">
@@ -70,30 +73,58 @@
               </div>
             </div>
 
+            <!--section gomuscu-->
             <div class="row row-margin-bottom">
               <div class="col-12 no-padding lib-item" data-category="view">
                 <div class="lib-panel">
                   <div class="row box-shadow">
                     <div class="col-md-6">
-                      <img class="lib-img-show" src="../img/travaux/web/imgGalerie/coach.png">
+                      <img class="lib-img-show" id="gomuscu" src="../img/travaux/web/imgGalerie/coach.png">
                     </div>
                     <div class="col-md-6">
                       <div class="lib-row lib-header">
-                          Example library
+                          <h3>Site coach sportif</h3>
 
                           <div class="lib-header-seperator"></div>
                       </div>
                         <div class="lib-row lib-desc">
-                          Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                          <p>Ce site fut fait comme projet pour simplon. Le but était de créer un site qui pourrait être réellement un site pour un coach sportif.</p>
+                          <p>Il est composé de 3 pages, une de présentation des différents produits, une pages pour les différents tarifs, et enfin la page de contact, avec un formulaire, un carte et un agenda intégrer montrant les disponibilité du coach.</p>
+                          <p>Pour en l'examiner, vous pouvez voir le site lui même <a href="https://geasseur.github.io/Coach/.">à cette adresse</a>. Si c'est le code source qui vous intéresse, <a href="https://github.com/geasseur/Coach">ça vous menera au repertoire github</a>.</p>
                         </div>
+
+                        <!--modal gomuscu-->
+                          <div id="myModal" class="modal fade in">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <a class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
+                                        <h4 class="modal-title">Modal Heading</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h4>Site pour coach sportif</h4>
+                                        <p></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="btn-group">
+                                            <button class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                                            <button class="btn btn-primary"><span class="glyphicon glyphicon-check"></span> Save</button>
+                                        </div>
+                                    </div>
+
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dalog -->
+                        </div><!-- /.modal -->
+
+                  <a data-toggle="modal" href="#myModal" class="btn btn-primary">En savoir plus</a>
+
                       </div>
                     </div>
                 </div>
               </div>
             </div>
           </section>
-
-
 
       </main>
 
