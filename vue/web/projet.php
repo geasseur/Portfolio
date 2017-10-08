@@ -27,8 +27,8 @@
               <p><?php echo $projet['texte'];?></p>
               <a href="<?php echo $projet['chemin']?>">Chemin vers GitHub</a>
             </article>
-            <form class="m-2" action="" method="post">
-              <input class='' type="submit" name="retour" value="retour">
+            <form class="ml-5 mt-3 mb-3" action="" method="post">
+              <input class='btn btn-primary' type="submit" name="retour" value="retour">
             </form>
           </section>
       </main>

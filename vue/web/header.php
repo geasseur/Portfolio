@@ -11,11 +11,11 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto" id="lienNav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.php">Index<span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php">Index</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php?test=web">Web<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.php?test">Web</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="">Arts</a>
