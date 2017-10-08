@@ -18,13 +18,13 @@
           <a class="nav-link" href="index.php?test">Web</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Arts</a>
+          <a class="nav-link" href="construction.html">Arts</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Jeux Video</a>
+          <a class="nav-link" href="construction.html">Jeux Video</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Contact</a>
+          <a class="nav-link" href="construction.html">Contact</a>
         </li>
       </ul>
     </div>

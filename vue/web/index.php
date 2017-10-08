@@ -41,20 +41,26 @@
               <img class="rounded-circle w-50" src="img/index/art.jpg" alt="image montrant un chevalier dessiner à l'encre">
               <h3>Travaux Graphique</h3>
               <p>C'est une galerie de mes différents travaux "artistique" lors de mes années en fac d'art, au beaux-art ou perso</p>
-              <a class="btn btn-primary mb-2" href="html/travaux.html">Mes "oeuvres d'arts"</a>
+              <form class="" action="" method="post">
+                <input class="btn btn-primary mb-2" type="submit" name="dessin" value="Mes Dessins">
+              </form>
             </section>
 
             <section class="card d-flex align-items-center col-12 col-lg-5 offset-lg-2 bg-faded mt-3">
               <img class="w-50 rounded-circle" src="img/index/0.Wallpaper.jpg" alt="image avec écrit gametrap">
               <h3>Travaux Vidéoludique</h3>
               <p>C'est un page montrant les différents jeux sur lequel je travails actuellement ou sur auquel j'ai participé, expliquant rapidement le concept et montrant quelques travaux graphiques et level design</p>
-              <a class="btn btn-primary mb-2" href="html/travaux.html">Mes jeux</a>
+              <form class="" action="" method="post">
+                <input class="btn btn-primary mb-2" type="submit" name="jeu" value="Mes jeux">
+              </form>
             </section>
 
             <section class="card d-flex align-items-center col-12 col-lg-5 bg-faded mt-3">
               <h3>Contact</h3>
               <p>Si vous souhaitez me confiez un travail, prenez contact avec moi, je répondrais dans la journée, normalement.</p>
-              <a class="btn btn-primary mb-2" href="html/contact.html">Contact</a>
+              <form class="" action="" method="post">
+                <input class="btn btn-primary mb-2" type="submit" name="contact" value="contact">
+              </form>
             </section>
 
           </section>
