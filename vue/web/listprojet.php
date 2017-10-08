@@ -10,8 +10,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
       <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
       <link rel="icon" type="image/png" href=".png" />
-      <script src="jquery-3.2.1.js"></script>
-      <title>Index</title>
+      <title>Travaux Web</title>
     </head>
     <body>
       <?php
@@ -29,9 +28,9 @@
               <h2><?php echo $donnees['titre']; ?></h2>
               <p><?php echo $donnees['resume'];?></p>
             </article>
-            <form class="" action="" method="post">
-              <input class='d-none' type="text" name="" value="">
-              <input class='btn btn-primary ml-5' type="submit" name="Détail" value="Détail">
+            <form class="m-2" action="" method="post">
+              <input  type="text" name="webID" value="<?php echo $donnees['webID'] ?>">
+              <input class='btn btn-primary ml-5' type="submit" name="detail" value="Détail">
             </form>
           </section>
           <?php
@@ -41,7 +40,7 @@
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        <script src="../js/jquery-3.2.1.js"></script>
+        <script src="jquery-3.2.1.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 

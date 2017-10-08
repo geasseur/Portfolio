@@ -8,6 +8,6 @@ catch (Exception $e){
   }
   function listProjet(){
     global $bdd;
-    $listprojet = $bdd->query('SELECT titre, pImg,resume from travauxWeb');
+    $listprojet = $bdd->query('SELECT webID, titre, pImg,resume from travauxWeb');
     return $listprojet->fetchAll();
   }
