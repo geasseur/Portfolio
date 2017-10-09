@@ -19,16 +19,16 @@
 
       <main class="container-fluid mt-5 bg-faded d-flex justify-content-around">
           <section>
-            <article class="col-6 d-inline-block">
-              <img class='col-12' src="<?php echo $projet['overview'] ?>" alt="image site">
+            <article class="align-top col-sm-3 col-md-3 col-lg-3 d-inline-block">
+              <img class='col-3' src="<?php echo $projet['overview'] ?>" alt="image site">
             </article>
-            <article class="col-5 d-inline-block">
+            <article class="col-sm-3 col-md-4 col-6 d-inline-block">
               <h2><?php echo $projet['titre']; ?></h2>
               <p><?php echo $projet['texte'];?></p>
               <a href="<?php echo $projet['chemin']?>">Chemin vers GitHub</a>
             </article>
-            <form class="m-2" action="" method="post">
-              <input class='' type="submit" name="retour" value="retour">
+            <form class="ml-5 mt-3 mb-3" action="" method="post">
+              <input class='btn btn-primary' type="submit" name="retour" value="retour">
             </form>
           </section>
       </main>

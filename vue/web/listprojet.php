@@ -16,22 +16,40 @@
       <?php
       include("header.php");
        ?>
-
-      <main class="container-fluid mt-5 bg-faded d-flex justify-content-around">
+      <main class="container-fluid mt-5 bg-faded d-flex justify-content-around flex-wrap">
+        <?php if (isset($_SESSION['prenom']) and $_SESSION['prenom'] = 'baptiste') {
+          ?>
+          <form class="" action="" method="post">
+            <label for="">titre</label>
+            <input type="text" name="titre" value=""><br>
+            <label for="">pImg</label>
+            <input type="file" name="pImg" value=""><br>
+            <label for="">overview</label>
+            <input type="file" name="overview" value=""><br>
+            <label for="">resume</label>
+            <input type="text" name="resume" value=""><br>
+            <label for="">texte</label>
+            <textarea name="texte" rows="8" cols="80"></textarea><br>
+            <label for="">chemin</label>
+            <input type="text" name="chemin" value=""><br>
+            <input type="submit" name="" value="rentrer projet">
+          </form>
+          <?php
+        } ?>
         <?php foreach ($listprojet as $donnees) {
           ?>
-          <section class='col-sm-12 col-lg-6'>
-            <article class="col-6 d-inline-block">
+          <section class='mt-2 col-sm-12 col-lg-6'>
+            <article class=" col-6 d-inline-block">
               <img class='col-12' src="<?php echo $donnees['pImg'] ?>" alt="image site">
             </article>
             <article class="col-5 d-inline-block">
               <h2><?php echo $donnees['titre']; ?></h2>
               <p><?php echo $donnees['resume'];?></p>
+              <form class="m-2" action="" method="post">
+                <input style='display:none;' type="text" name="webID" value="<?php echo $donnees['webID'] ?>">
+                <input class='btn btn-primary ml-5' type="submit" name="detail" value="Détail">
+              </form>
             </article>
-            <form class="m-2" action="" method="post">
-              <input  type="text" name="webID" value="<?php echo $donnees['webID'] ?>">
-              <input class='btn btn-primary ml-5' type="submit" name="detail" value="Détail">
-            </form>
           </section>
           <?php
         } ?>
