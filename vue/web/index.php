@@ -17,8 +17,15 @@
       <?php
       include("header.php");
        ?>
+       <?php if (isset($_SESSION['prenom'])){
+         ?>
+         <p><?php echo $_SESSION['prenom'];?></p>
+         <?php
+       } ?>
+
 
       <main class="container-fluid mt-5 bg-faded">
+          <!-- <?php// var_dump($connexion);  ?> -->
         <section class="container" id="présentation">
           <section class="row">
             <section class="card d-flex align-items-center col-12 col-lg-5 bg-faded mt-3">

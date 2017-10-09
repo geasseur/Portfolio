@@ -19,10 +19,10 @@
 
       <main class="container-fluid mt-5 bg-faded d-flex justify-content-around">
           <section>
-            <article class="col-6 d-inline-block">
-              <img class='col-12' src="<?php echo $projet['overview'] ?>" alt="image site">
+            <article class="align-top col-sm-3 col-md-3 col-lg-3 d-inline-block">
+              <img class='col-3' src="<?php echo $projet['overview'] ?>" alt="image site">
             </article>
-            <article class="col-5 d-inline-block">
+            <article class="col-sm-3 col-md-4 col-6 d-inline-block">
               <h2><?php echo $projet['titre']; ?></h2>
               <p><?php echo $projet['texte'];?></p>
               <a href="<?php echo $projet['chemin']?>">Chemin vers GitHub</a>

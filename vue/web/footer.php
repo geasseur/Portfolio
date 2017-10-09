@@ -12,4 +12,15 @@
       </a>
     </li>
   </ul>
+  <?php if(!isset($_SESSION['prenom'])){ ?>
+  <section>
+    <form class="" action="" method="post">
+      <label class='text-primary' for="">pseudo</label>
+      <input type="text" name="prenom" value=""><br>
+      <label class='text-primary' for="">password</label>
+      <input type="password" name="password" value=""><br>
+      <input type="submit" name="connexion" value="connexion">
+    </form>
+  </section>
+  <?php } ?>
 </footer>

@@ -16,8 +16,26 @@
       <?php
       include("header.php");
        ?>
-
       <main class="container-fluid mt-5 bg-faded d-flex justify-content-around flex-wrap">
+        <?php if (isset($_SESSION['prenom']) and $_SESSION['prenom'] = 'baptiste') {
+          ?>
+          <form class="" action="" method="post">
+            <label for="">titre</label>
+            <input type="text" name="titre" value=""><br>
+            <label for="">pImg</label>
+            <input type="file" name="pImg" value=""><br>
+            <label for="">overview</label>
+            <input type="file" name="overview" value=""><br>
+            <label for="">resume</label>
+            <input type="text" name="resume" value=""><br>
+            <label for="">texte</label>
+            <textarea name="texte" rows="8" cols="80"></textarea><br>
+            <label for="">chemin</label>
+            <input type="text" name="chemin" value=""><br>
+            <input type="submit" name="" value="rentrer projet">
+          </form>
+          <?php
+        } ?>
         <?php foreach ($listprojet as $donnees) {
           ?>
           <section class='mt-2 col-sm-12 col-lg-6'>

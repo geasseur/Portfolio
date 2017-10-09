@@ -30,4 +30,11 @@
     </div>
 
   </nav>
+  <?php if(isset($_SESSION['prenom'])){ ?>
+  <section>
+    <form class="" action="" method="post">
+      <input type="submit" name="deco" value="deconnexion">
+    </form>
+  </section>
+<?php } ?>
 </header>
