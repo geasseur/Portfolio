@@ -18,13 +18,13 @@ if (!isset($_POST['travauxWeb']) and !isset($_POST['retour']) and !isset($_POST[
 if ((isset($_POST['travauxWeb']) or isset($_POST['retour']) or isset($_GET['test']) and !isset($_POST['detail']))) {
   require 'model/web/listprojet.php';
   $listprojet = listprojet();
-  if (isset($_POST['titre']) and isset($_POST['pImg']) and isset($_POST['overview']) and isset($_POST['resume']) and isset($_POST['texte']) and isset($_POST['chemin'])) {
-    ajoutProjetWeb($_POST['titre'],$_POST['pImg'], $_POST['overview'], $_POST['resume'], $_POST['texte'], $_POST['chemin']);
+  if (isset($_POST['titre']) and isset($_FILES['pImg']) and isset($_FILES['overview']) and isset($_POST['resume']) and isset($_POST['texte']) and isset($_POST['chemin'])) {
+    ajoutProjetWeb($_POST['titre'],$_FILES['pImg'], $_FILES['overview'], $_POST['resume'], $_POST['texte'], $_POST['chemin']);
   }
   require 'vue/web/listprojet.php';
 }
 
-if (isset($_POST['detail']) and isset($_POST['webID']) and isset($_SESSION['page'])) {
+if (isset($_POST['detail']) and isset($_POST['webID']) ) {
   require 'model/web/projet.php';
   $projet = displayProjet($_POST['webID']);
   require 'vue/web/projet.php';

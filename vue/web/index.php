@@ -25,13 +25,11 @@
 
 
       <main class="container-fluid mt-5 bg-faded">
-          <!-- <?php// var_dump($connexion);  ?> -->
         <section class="container" id="présentation">
           <section class="row">
             <section class="card d-flex align-items-center col-12 col-lg-5 bg-faded mt-3">
               <img src="img/index/portrait.png" class="rounded-circle w-50" alt="portrait">
               <h2>Developpeur Web/Level designer</h2>
-              <p></p>
             </section>
 
             <section class="card d-flex align-items-center col-12 col-lg-5 offset-lg-2 bg-faded mt-3">

@@ -19,7 +19,8 @@
       <main class="container-fluid mt-5 bg-faded d-flex justify-content-around flex-wrap">
         <?php if (isset($_SESSION['prenom']) and $_SESSION['prenom'] = 'baptiste') {
           ?>
-          <form class="" action="" method="post">
+          <!-- Formulaire pour ajouter projet -->
+          <form class="" action="" method="post" enctype="multipart/form-data">
             <label for="">titre</label>
             <input type="text" name="titre" value=""><br>
             <label for="">pImg</label>
@@ -32,17 +33,18 @@
             <textarea name="texte" rows="8" cols="80"></textarea><br>
             <label for="">chemin</label>
             <input type="text" name="chemin" value=""><br>
-            <input type="submit" name="" value="rentrer projet">
+            <input type="submit" name="travauxWeb" value="rentrer projet">
           </form>
           <?php
         } ?>
         <?php foreach ($listprojet as $donnees) {
           ?>
+          <!-- Liste des differents projets -->
           <section class='mt-2 col-sm-12 col-lg-6'>
-            <article class=" col-6 d-inline-block">
-              <img class='col-12' src="<?php echo $donnees['pImg'] ?>" alt="image site">
+            <article class="col-sm-12 col-md-5 col-lg-5 align-top d-inline-block">
+              <img class='col-12' src="<?php echo $donnees['overview'] ?>" alt="image site">
             </article>
-            <article class="col-5 d-inline-block">
+            <article class="col-sm-12 col-md-6 col-lg-6 align-top d-inline-block">
               <h2><?php echo $donnees['titre']; ?></h2>
               <p><?php echo $donnees['resume'];?></p>
               <form class="m-2" action="" method="post">
