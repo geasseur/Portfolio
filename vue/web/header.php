@@ -21,10 +21,7 @@
           <a class="nav-link" href="construction.html">Arts</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="construction.html">Jeux Video</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="construction.html">Contact</a>
+          <a class="nav-link" href="control/jeux/controlListeJeux.php">Jeux Video</a>
         </li>
       </ul>
     </div>

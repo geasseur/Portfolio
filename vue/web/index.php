@@ -25,19 +25,17 @@
 
 
       <main class="container-fluid mt-5 bg-faded">
-          <!-- <?php// var_dump($connexion);  ?> -->
         <section class="container" id="présentation">
           <section class="row">
             <section class="card d-flex align-items-center col-12 col-lg-5 bg-faded mt-3">
               <img src="img/index/portrait.png" class="rounded-circle w-50" alt="portrait">
               <h2>Developpeur Web/Level designer</h2>
-              <p></p>
             </section>
 
             <section class="card d-flex align-items-center col-12 col-lg-5 offset-lg-2 bg-faded mt-3">
               <img class="rounded-circle w-50" src="img/index/Web.png" alt="image de wireframe">
               <h3>Travaux Web</h3>
-              <p>C'est un aperçu des différents projet web, la plupars sont encore très simpliste, mais les prochains seront plus complexe. Chacun aura le lien vers le repertoire github, au cas où quelqu'un serait intéressé pour les améliorer pour lui</p>
+              <p>C'est un aperçu des différents projets web que j'ai développés lors de ma formation à Simplon. Je partage le lien vers le repertoire github, au cas où quelqu'un serait intéressé pour les améliorer.</p>
               <!-- <a class="btn btn-primary mb-2" href="php/presentation_travaux_web.php">Mes sites web</a> -->
               <form class="" action="" method="post">
                 <input class="btn btn-primary mb-2" type="submit" name="travauxWeb" value="Mes sites Web">
@@ -46,8 +44,8 @@
 
             <section class="card d-flex align-items-center col-12 col-lg-5 bg-faded mt-3">
               <img class="rounded-circle w-50" src="img/index/art.jpg" alt="image montrant un chevalier dessiner à l'encre">
-              <h3>Travaux Graphique</h3>
-              <p>C'est une galerie de mes différents travaux "artistique" lors de mes années en fac d'art, au beaux-art ou perso</p>
+              <h3>Travaux Graphiques</h3>
+              <p>C'est une galerie de mes différents travaux "artistiques" personnels.</p>
               <form class="" action="" method="post">
                 <input class="btn btn-primary mb-2" type="submit" name="dessin" value="Mes Dessins">
               </form>
@@ -55,19 +53,17 @@
 
             <section class="card d-flex align-items-center col-12 col-lg-5 offset-lg-2 bg-faded mt-3">
               <img class="w-50 rounded-circle" src="img/index/0.Wallpaper.jpg" alt="image avec écrit gametrap">
-              <h3>Travaux Vidéoludique</h3>
-              <p>C'est un page montrant les différents jeux sur lequel je travails actuellement ou sur auquel j'ai participé, expliquant rapidement le concept et montrant quelques travaux graphiques et level design</p>
-              <form class="" action="" method="post">
+              <h3>Travaux Vidéoludiques</h3>
+              <p>C'est une page montrant les différents jeux sur lesquels je travaille actuellement ou auxquels j'ai participé.</p>
+              <form class="" action="control/jeux/controlListeJeux.php" method="post">
                 <input class="btn btn-primary mb-2" type="submit" name="jeu" value="Mes jeux">
               </form>
             </section>
 
             <section class="card d-flex align-items-center col-12 col-lg-5 bg-faded mt-3">
               <h3>Contact</h3>
-              <p>Si vous souhaitez me confiez un travail, prenez contact avec moi, je répondrais dans la journée, normalement.</p>
-              <form class="" action="" method="post">
-                <input class="btn btn-primary mb-2" type="submit" name="contact" value="contact">
-              </form>
+              <p>Adresse Mail : baptiste.ventura@neuf.fr</p>
+              <p>Numéro Téléphone : +33 (0)6 42 62 80 01</p>
             </section>
 
           </section>
