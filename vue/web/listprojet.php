@@ -31,8 +31,10 @@
             <input type="text" name="resume" value=""><br>
             <label for="">texte</label>
             <textarea name="texte" rows="8" cols="80"></textarea><br>
-            <label for="">chemin</label>
+            <label for="">code Source</label>
             <input type="text" name="chemin" value=""><br>
+            <label for="">Site</label>
+            <input type="text" name="cheminExemple" value="">
             <input type="submit" name="travauxWeb" value="rentrer projet">
           </form>
           <?php
@@ -48,7 +50,7 @@
               <h2><?php echo $donnees['titre']; ?></h2>
               <p><?php echo $donnees['resume'];?></p>
               <form class="m-2" action="" method="post">
-                <input style='display:none;' type="text" name="webID" value="<?php echo $donnees['webID'] ?>">
+                <input  type="text" name="webID" value="<?php echo $donnees['webID'] ?>">
                 <input class='btn btn-primary ml-5' type="submit" name="detail" value="Détail">
               </form>
             </article>
