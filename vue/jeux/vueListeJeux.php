@@ -19,7 +19,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand row d-flex align-items-center" href="">
-            <img src="../../img/header/logoLoup.tif" class="col-4 col-lg-6" id="logoSite" alt="logo noir et blanc en forme de loup">
+            <img src="../../img/header/logoLoup.png" class="col-4 col-lg-6" id="logoSite" alt="logo noir et blanc en forme de loup">
             <h1 class="col-4 col-lg-4">Baptiste <br>
             Ventura</h1>
           </a>
@@ -35,7 +35,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="../../construction.html">Arts</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="">Jeux Video</a>
               </li>
             </ul>
@@ -50,7 +50,7 @@
         </section>
       <?php } ?>
       </header>
-      <main class="container-fluid mt-5 bg-faded d-flex justify-content-around flex-wrap">
+      <main class="mx-auto mt-5 bg-faded d-flex justify-content-around flex-wrap">
         <?php if (isset($_SESSION['prenom']) and $_SESSION['prenom'] = 'baptiste') {
           ?>
           <!-- Formulaire pour ajouter projet -->
@@ -99,26 +99,15 @@
         <ul class="col-4 col-lg-2 offset-lg-7 mt-2 row">
           <li class="col-4 listFooter" >
             <a href="https://www.linkedin.com/in/baptiste-ventura-a17b0083/">
-              <img class="w-100" src="../../img/footer/linkdin.png" alt="linkdin">
+              <img class="w-100 h-100" src="../../img/footer/linkdin.png" alt="linkdin">
             </a>
           </li>
           <li class="col-4 listFooter">
             <a href="https://twitter.com">
-              <img class="w-100" src="../../img/footer/twitter.png" alt="twitter">
+              <img class="w-100 h-100" src="../../img/footer/twitter.png" alt="twitter">
             </a>
           </li>
         </ul>
-        <?php if(!isset($_SESSION['prenom'])){ ?>
-        <section>
-          <form class="" action="" method="post">
-            <label class='text-primary' for="">pseudo</label>
-            <input type="text" name="prenom" value=""><br>
-            <label class='text-primary' for="">password</label>
-            <input type="password" name="password" value=""><br>
-            <input type="submit" name="connexion" value="connexion">
-          </form>
-        </section>
-        <?php } ?>
       </footer>
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

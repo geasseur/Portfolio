@@ -4,18 +4,22 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand row d-flex align-items-center" href="">
-      <img src="img/header/logoLoup.tif" class="col-4 col-lg-6" id="logoSite" alt="logo noir et blanc en forme de loup">
+      <img src="img/header/logoLoup.png" class="col-4 col-lg-6" id="logoSite" alt="logo noir et blanc en forme de loup">
       <h1 class="col-4 col-lg-4">Baptiste <br>
       Ventura</h1>
     </a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto" id="lienNav">
-        <li class="nav-item">
+        <li class="nav-item <?php if (!isset($_GET['test']) and !isset($_POST['travauxWeb'])) {
+          ?>active<?php
+        } ?>">
           <a class="nav-link" href="index.php">Index</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php?test">Web</a>
+          <a class="nav-link <?php if (isset($_GET['test']) or isset($_POST['travauxWeb'])) {
+            ?>active<?php
+          } ?>" href="index.php?test">Web</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="construction.html">Arts</a>

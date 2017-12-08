@@ -26,7 +26,7 @@
 
       <main class="container-fluid mt-5 bg-faded">
         <section class="container" id="présentation">
-          <section class="row">
+          <section class="row justify-content-around">
             <section class="card d-flex align-items-center col-12 col-lg-5 bg-faded mt-3">
               <img src="img/index/portrait.png" class="rounded-circle w-50" alt="portrait">
               <h2>Developpeur Web/Level designer</h2>
@@ -60,7 +60,7 @@
               </form>
             </section>
 
-            <section class="card d-flex align-items-center col-12 col-lg-5 bg-faded mt-3">
+            <section class="card d-flex align-items-center col-12 col-lg-5 bg-faded mt-3 mb-3">
               <h3>Contact</h3>
               <p>Adresse Mail : baptiste.ventura@neuf.fr</p>
               <p>Numéro Téléphone : +33 (0)6 42 62 80 01</p>

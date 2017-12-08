@@ -18,7 +18,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand row d-flex align-items-center" href="">
-            <img src="../../img/header/logoLoup.tif" class="col-4 col-lg-6" id="logoSite" alt="logo noir et blanc en forme de loup">
+            <img src="../../img/header/logoLoup.png" class="col-4 col-lg-6" id="logoSite" alt="logo noir et blanc en forme de loup">
             <h1 class="col-4 col-lg-4">Baptiste <br>
             Ventura</h1>
           </a>
@@ -34,7 +34,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="../../construction.html">Arts</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="controlListeJeux.php">Jeux Video</a>
               </li>
             </ul>
@@ -55,10 +55,10 @@
             <article class="col-md-12 col-lg-7 d-inline-block align-top">
               <article class="mb-5 align-top d-flex justify-content-around flex-wrap">
                 <?php if (!empty($projet['imageDetail1'])): ?>
-                  <img class='col-md-12 col-lg-5 mt-2' src="<?php echo $projet['imageDetail1'] ?>" alt="image site">
+                  <img class='col-md-12 col-lg-5 mt-2 h-25' src="<?php echo $projet['imageDetail1'] ?>" alt="image site">
                 <?php endif; ?>
                 <?php if (!empty($projet['imageDetail2'])): ?>
-                  <img class='col-md-12 col-lg-5 mt-2' src="<?php echo $projet['imageDetail2'] ?>" alt="image site">
+                  <img class='col-md-12 col-lg-5 mt-2 h-25' src="<?php echo $projet['imageDetail2'] ?>" alt="image site">
                 <?php endif; ?>
                 <?php if (!empty($projet['imageDetail3'])): ?>
                   <img class='col-md-12 col-lg-5 mt-2' src="<?php echo $projet['imageDetail3'] ?>" alt="image site">
@@ -68,6 +68,9 @@
             <article class="col-md-12 col-lg-4 d-inline-block">
               <h2><?php echo $projet['titre']; ?></h2>
               <p><?php echo $projet['texte'];?></p>
+              <?php if (!empty($projet['chemin'])): ?>
+                <a href="<?php echo $projet['chemin'] ?>">Lien vers le jeu</a>
+              <?php endif; ?>
             </article>
             <?php
             if (isset($_SESSION['prenom'])){
@@ -88,31 +91,20 @@
             </form>
           </section>
       </main>
-      <footer class="row d-flex justify-content-center align-items-center bg-inverse">
+      <footer class="mx-auto row d-flex justify-content-center align-items-center bg-inverse">
         <p class="col-12 col-lg-3 text-white">2017 - Baptiste Ventura</p>
         <ul class="col-4 col-lg-2 offset-lg-7 mt-2 row">
           <li class="col-4 listFooter" >
             <a href="https://www.linkedin.com/in/baptiste-ventura-a17b0083/">
-              <img class="w-100" src="../../img/footer/linkdin.png" alt="linkdin">
+              <img class="w-100 h-100" src="../../img/footer/linkdin.png" alt="linkdin">
             </a>
           </li>
           <li class="col-4 listFooter">
             <a href="https://twitter.com">
-              <img class="w-100" src="../../img/footer/twitter.png" alt="twitter">
+              <img class="w-100 h-100" src="../../img/footer/twitter.png" alt="twitter">
             </a>
           </li>
         </ul>
-        <?php if(!isset($_SESSION['prenom'])){ ?>
-        <section>
-          <form class="" action="" method="post">
-            <label class='text-primary' for="">pseudo</label>
-            <input type="text" name="prenom" value=""><br>
-            <label class='text-primary' for="">password</label>
-            <input type="password" name="password" value=""><br>
-            <input type="submit" name="connexion" value="connexion">
-          </form>
-        </section>
-        <?php } ?>
       </footer>
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

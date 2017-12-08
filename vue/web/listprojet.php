@@ -50,7 +50,7 @@
               <h2><?php echo $donnees['titre']; ?></h2>
               <p><?php echo $donnees['resume'];?></p>
               <form class="m-2" action="" method="post">
-                <input  type="text" name="webID" value="<?php echo $donnees['webID'] ?>">
+                <input class='d-none' type="number" name="webID" value="<?php echo $donnees['webID'] ?>">
                 <input class='btn btn-primary ml-5' type="submit" name="detail" value="Détail">
               </form>
             </article>
