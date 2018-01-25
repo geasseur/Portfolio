@@ -46,7 +46,7 @@
               <img class="rounded-circle w-50" src="img/index/art.jpg" alt="image montrant un chevalier dessiner à l'encre">
               <h3>Travaux Graphiques</h3>
               <p>C'est une galerie de mes différents travaux "artistiques" personnels.</p>
-              <form class="" action="" method="post">
+              <form class="" action="control/art/controlDessin.php" method="post">
                 <input class="btn btn-primary mb-2" type="submit" name="dessin" value="Mes Dessins">
               </form>
             </section>

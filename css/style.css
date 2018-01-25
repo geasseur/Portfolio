@@ -1,7 +1,7 @@
 /**********HEADER**********/
 
-h1{
-
+.titre{
+  font-size: 100%;
 }
 
 footer>ul>.listFooter{
@@ -13,11 +13,7 @@ footer>p{
 }
 
 #lienNav>li>a{
-  font-size: 2em;
-}
-
-#boncoin, #gomuscu{
-  width: 100%;
+  font-size: 1.2em;
 }
 
 main{
@@ -28,8 +24,4 @@ main{
 
 h4{
   text-align: center;
-}
-
-img{
-  height: 200px; !important;
 }

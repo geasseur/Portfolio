@@ -29,7 +29,7 @@
               <a href="<?php echo $projet['cheminExemple']?>">Le site lui même</a>
             </article>
             <?php
-            if ($_SESSION['prenom']){
+            if (isset($_SESSION['prenom'])){
               ?>
               <form class="" action="" method="post">
                 <label for="">titre</label>

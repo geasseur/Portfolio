@@ -13,30 +13,30 @@
       <title>Travaux Jeux Video</title>
     </head>
     <body>
-      <header class="row d-flex align-items-center justify-content-center">
+      <header class="row d-flex align-items-center justify-content-center container bg-inverse col-12 mx-auto">
         <nav class="navbar navbar-toggleable-md navbar-light col-12">
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand row d-flex align-items-center" href="">
-            <img src="../../img/header/logoLoup.png" class="col-4 col-lg-6" id="logoSite" alt="logo noir et blanc en forme de loup">
-            <h1 class="col-4 col-lg-4">Baptiste <br>
-            Ventura</h1>
+            <img src="../../img/index/portrait.png" class="rounded-circle col-2 col-lg-3" id="logoSite" alt="portrait de moi même">
+            <p class="col-4 col-lg-4 text-white titre">Baptiste <br>
+            Ventura <br> Developpeur Web</p>
           </a>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto" id="lienNav">
               <li class="nav-item">
-                <a class="nav-link" href="../../index.php">Index</a>
+                <a class="nav-link text-white" href="../../index.php">Index</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../index.php?test">Web</a>
+                <a class="nav-link text-white" href="../../vue/other/profil.php">Profil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../construction.html">Arts</a>
+                <a class="nav-link text-white" href="../../vue/other/autreTravaux.php">Travaux</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="">Jeux Video</a>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../../html/contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -50,7 +50,7 @@
         </section>
       <?php } ?>
       </header>
-      <main class="mx-auto mt-5 bg-faded d-flex justify-content-around flex-wrap">
+      <main class="mx-auto mt-2 mt-2 bg-faded d-flex justify-content-around flex-wrap">
         <?php if (isset($_SESSION['prenom']) and $_SESSION['prenom'] = 'baptiste') {
           ?>
           <!-- Formulaire pour ajouter projet -->
@@ -78,9 +78,9 @@
         <?php foreach ($listprojet as $donnees) {
           ?>
           <!-- Liste des differents projets -->
-          <section class='mt-2 col-sm-12 col-lg-6'>
+          <section class='mt-2 pb-2 col-sm-12 col-lg-6'>
             <article class="col-sm-12 col-md-5 col-lg-5 align-top d-inline-block">
-              <img class='col-12' src="<?php echo $donnees['overview'] ?>" alt="image site">
+              <img class='col-12 m-3 w-100 h-75' src="<?php echo $donnees['overview'] ?>" alt="image site">
             </article>
             <article class="col-sm-12 col-md-6 col-lg-6 align-top d-inline-block">
               <h2><?php echo $donnees['titre']; ?></h2>

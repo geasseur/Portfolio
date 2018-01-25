@@ -2,9 +2,8 @@
   include 'connexion.php';
   function displayProjet($id){
     global $bdd;
-    $displayProjet = $bdd ->query('SELECT webID ,titre, overview,resume,texte, chemin, cheminExemple from travauxWeb where webID = '.$id.'');
-    var_dump($displayProjet);
-    // return $displayProjet->fetch();
+    $displayProjet = $bdd->query("SELECT webID ,titre, overview,resume,texte, chemin, cheminExemple from travauxWeb where webID = $id");
+    return $displayProjet->fetch();
   }
   function modificationProjet($titre, $resume, $texte){
     $modificationProjetWeb = $bdd->prepare('UPDATE travauxWeb set titre = :titre, resume = :resume, texte = :texte');
