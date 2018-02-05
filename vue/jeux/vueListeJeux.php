@@ -4,42 +4,54 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="../../bootstrap4/css/bootstrap.min.css">
       <link rel="stylesheet" href="../../css/style.css">
       <link rel="stylesheet" href="../../css/normalize.css">
       <link rel="stylesheet" href="../../css/main.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-      <link rel="stylesheet" href="../../bootstrap4/css/bootstrap.min.css">
       <link rel="icon" type="image/png" href=".png" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
       <title>Travaux Jeux Video</title>
     </head>
     <body>
-      <header class="row d-flex align-items-center justify-content-center container bg-inverse col-12 mx-auto">
+      <header class="row d-flex align-items-center justify-content-center bg-inverse col-12 mx-auto">
+        <script type="text/javascript" src='js/main.js'>
+
+        </script>
         <nav class="navbar navbar-toggleable-md navbar-light col-12">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler navbar-toggler-right btn-primary mt-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand row d-flex align-items-center" href="">
-            <img src="../../img/index/portrait.png" class="rounded-circle col-2 col-lg-3" id="logoSite" alt="portrait de moi même">
-            <p class="col-4 col-lg-4 text-white titre">Baptiste <br>
-            Ventura <br> Developpeur Web</p>
+            <img src="../../img/index/portrait.png" class="rounded-circle col-2 col-lg-2" id="logoSite" alt="portrait de moi même">
+            <div class="col-4 col-lg-4 text-white">
+              <p class="titre">Baptiste
+              Ventura</p>
+              <p class='prof'>Developpeur Web</p>
+            </div>
           </a>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto" id="lienNav">
-              <li class="nav-item">
-                <a class="nav-link text-white" href="../../index.php">Index</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="../../vue/other/profil.php">Profil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="../../vue/other/autreTravaux.php">Travaux</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="../../html/contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
+          <!-- <div class="navbarPerso col-5">     -->
+            <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto navbarPerso" id="lienNav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.php">Index</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../vue/other/profil.php">Profil</a>
+                  <a class="nav-link " href="../../vue/other/profil.php"><i class="material-icons">account_circle</i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../vue/other/autreTravaux.php">Travaux</a>
+                  <a class="nav-link " href="../../vue/other/autreTravaux.php"><i class="material-icons">work</i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../html/contact.html">Contact</a>
+                  <a class="nav-link " href="../../html/contact.html"><i class="material-icons">mail</i></a>
+                </li>
+              </ul>
+            </div>
+          <!-- </div> -->
 
         </nav>
         <?php if(isset($_SESSION['prenom'])){ ?>
@@ -50,7 +62,8 @@
         </section>
       <?php } ?>
       </header>
-      <main class="mx-auto mt-2 mt-2 bg-faded d-flex justify-content-around flex-wrap">
+
+      <main class="mx-auto m-2 bg-faded d-flex justify-content-around flex-wrap">
         <?php if (isset($_SESSION['prenom']) and $_SESSION['prenom'] = 'baptiste') {
           ?>
           <!-- Formulaire pour ajouter projet -->
@@ -87,7 +100,7 @@
               <p><?php echo $donnees['resume'];?></p>
               <form class="m-2" action="controlProjetJeu.php" method="post">
                 <input class='d-none' type="text" name="id" value="<?php echo $donnees['id'] ?>">
-                <input class='btn btn-primary ml-5' type="submit" name="detail" value="Détail">
+                <input class='btn btn-primary ml-5 material-icons' type="submit" name="detail" value="search">
               </form>
             </article>
           </section>

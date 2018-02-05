@@ -7,46 +7,56 @@
       <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="../css/normalize.css">
       <link rel="stylesheet" href="../css/main.css">
-      <link rel="stylesheet" href="../bootstrap4/css/bootstrap.min.css">
       <link rel="icon" type="image/png" href=".png" />
       <script src="../jquery-3.2.1.js"></script>
+      <link rel="stylesheet" href="../bootstrap4/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
       <title>Index</title>
     </head>
     <body>
-      <header class="row d-flex align-items-center justify-content-center container bg-inverse col-12 mx-auto">
+      <header class="row d-flex align-items-center justify-content-center bg-inverse col-12 mx-auto">
         <nav class="navbar navbar-toggleable-md navbar-light col-12">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler navbar-toggler-right btn-primary mt-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand row d-flex align-items-center" href="">
-            <img src="../img/index/portrait.png" class="rounded-circle col-2 col-lg-3" id="logoSite" alt="portrait de moi même">
-            <p class="col-4 col-lg-4 text-white titre">Baptiste <br>
-            Ventura <br> Developpeur Web</p>
+            <img src="../img/index/portrait.png" class="rounded-circle col-2 col-lg-2" id="logoSite" alt="portrait de moi même">
+            <div class="col-4 col-lg-4 text-white">
+              <p class="titre">Baptiste
+              Ventura</p>
+              <p class='prof'>Developpeur Web</p>
+            </div>
           </a>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto" id="lienNav">
-              <li class="nav-item">
-                <a class="nav-link text-white" href="../index.php">Index</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="../vue/other/profil.php">Profil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="../vue/other/autreTravaux.php">Travaux</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="">Contact</a>
-              </li>
-            </ul>
-          </div>
+          <!-- <div class="navbarPerso col-5">     -->
+            <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto navbarPerso" id="lienNav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.php">Index</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../vue/other/profil.php">Profil</a>
+                  <a class="nav-link " href="../vue/other/profil.php"><i class="material-icons">account_circle</i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../vue/other/autreTravaux.php">Travaux</a>
+                  <a class="nav-link " href="../vue/other/autreTravaux.php"><i class="material-icons">work</i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="">Contact</a>
+                  <a class="nav-link " href=""><i class="material-icons">mail</i></a>
+                </li>
+              </ul>
+            </div>
+          <!-- </div> -->
 
         </nav>
       </header>
 
 
 
-      <main class="container mt-2 mb-2 bg-faded">
+      <main class="m-3 bg-faded">
         <section>
           <article class="text-center pt-4">
             <h4>Voici mes différentes coordonnées :</h4>
@@ -75,7 +85,6 @@
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        <script src="../js/jquery-3.2.1.js"></script>
         <script src="../js/plugins.js"></script>
         <script src="../js/main.js"></script>
 

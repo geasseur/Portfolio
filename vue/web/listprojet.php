@@ -4,19 +4,26 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
       <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/style.css">
       <link rel="icon" type="image/png" href=".png" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
       <title>Index</title>
     </head>
     <body>
       <?php
       include("header.php");
        ?>
-      <main class="container mt-5 d-flex justify-content-around flex-wrap">
+       <article class="text-center mt-3">
+         <h3>Projets Web</h3>
+         <p>Bienvenu sur mon Portfolio, visiteur. Vous trouverez sur cette page tous mes projets web, du plus récent au plus ancien.</p>
+         <p>Vous pouvez également voir ma page <a class="" href="vue/other/profil.php">Profil</a>, où je donne quelques détails sur moi même. La page <a class="" href="html/contact.html">Contact</a> founit mes coordonnées si vous désirez me contacter.</p>
+         <p>La page <a class="" href="vue/other/autreTravaux.php">Travaux</a> présentera d'autres créations autres que web.</p>
+       </article>
+      <main class="container d-flex justify-content-around flex-wrap">
         <?php if (isset($_SESSION['prenom']) and $_SESSION['prenom'] = 'baptiste') {
           ?>
           <!-- Formulaire pour ajouter projet -->
@@ -42,20 +49,20 @@
         <?php foreach ($listprojet as $donnees) {
           ?>
           <!-- Liste des differents projets -->
-          <section class='mt-2 col-sm-12 col-lg-5 m-2 bg-faded'>
+          <section class='col-sm-12 col-lg-5 projetWeb p-3'>
             <article class="col-sm-12 col-md-5 col-lg-5 align-top d-inline-block">
-              <img class='col-12 w-100 m-3' src="<?php echo $donnees['overview'] ?>" alt="image site">
+              <img class='col-12 w-100 h-100 m-3 imgSite' src="<?php echo $donnees['overview'] ?>" alt="image site">
             </article>
-            <article class="col-sm-12 col-md-6 col-lg-6 align-top d-inline-block">
+            <article class=" pt-2 col-sm-12 col-md-6 col-lg-6 align-top d-inline-block texte">
               <div class="d-flex flex-column align-items-center">
-                <h2><?php echo $donnees['titre']; ?></h2>
+                <h2 class="titleFont"><?php echo $donnees['titre']; ?></h2>
                 <p><?php echo $donnees['resume'];?></p>
-                <form class="m-2" action="" method="post">
-                  <input class='d-none' type="number" name="webID" value="<?php echo $donnees['webID'] ?>">
-                  <input class='btn btn-primary ml-5' type="submit" name="detail" value="Détail">
-                </form>
               </div>
             </article>
+            <form class="m-2 detailWeb" action="" method="post">
+              <input class='d-none' type="number" name="webID" value="<?php echo $donnees['webID'] ?>">
+              <input class='btn btnDetailWeb ml-5 material-icons' type="submit" name="detail" value="search">
+            </form>
           </section>
           <?php
         } ?>

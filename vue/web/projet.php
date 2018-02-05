@@ -9,6 +9,8 @@
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
       <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
       <link rel="icon" type="image/png" href=".png" />
       <title><?php echo $projet['titre'] ?></title>
     </head>
@@ -17,10 +19,10 @@
       include("header.php");
        ?>
 
-      <main class="container-fluid mt-5 bg-faded d-flex justify-content-around">
+      <main class="container-fluid m-5 bg-faded d-flex justify-content-around">
           <section>
             <article class="col-5 align-top  d-inline-block">
-              <img class='col-12 h-50' src="<?php echo $projet['overview'] ?>" alt="image site">
+              <img class='col-12 h-50 mt-2' src="<?php echo $projet['overview'] ?>" alt="image site">
             </article>
             <article class="col-6 d-inline-block">
               <h2><?php echo $projet['titre']; ?></h2>

@@ -1,7 +1,16 @@
 /**********HEADER**********/
-
 .titre{
   font-size: 100%;
+}
+
+.prof{
+  color: white;
+  text-align: center;
+}
+
+.navbarPerso li{
+  display: flex;
+  align-items: center;
 }
 
 footer>ul>.listFooter{
@@ -14,6 +23,11 @@ footer>p{
 
 #lienNav>li>a{
   font-size: 1.2em;
+  color : white;
+}
+
+#lienNav>li>a:hover{
+  color : #05ACC6;
 }
 
 main{
@@ -24,4 +38,36 @@ main{
 
 h4{
   text-align: center;
+}
+
+a{
+  color : #05ACC6;
+}
+
+.titleFont, .prof {
+  font-family: 'Sedgwick Ave', cursive;
+}
+
+.projetWeb{
+  background-color: rgb(240, 240, 240);
+  /* height: 200px; */
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 3px;
+  margin : 30px 0 30px 0;
+}
+
+.detailWeb{
+  position: absolute;
+  bottom: 10px;
+  right: 40%;
+}
+.texte{
+  margin-bottom: 50px;
+}
+.btnDetailWeb{
+  background-color: #05ACC6;
+}
+.btnDetailWeb:hover{
+  background-color : white;
 }

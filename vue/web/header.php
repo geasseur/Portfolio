@@ -7,27 +7,35 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand row d-flex align-items-center" href="">
-      <img src="img/index/portrait.png" class="rounded-circle col-2 col-lg-3" id="logoSite" alt="portrait de moi même">
-      <p class="col-4 col-lg-4 text-white titre">Baptiste <br>
-      Ventura <br> Developpeur Web</p>
+      <img src="img/index/portrait.png" class="rounded-circle col-2 col-lg-2" id="logoSite" alt="portrait de moi même">
+      <div class="col-4 col-lg-4 text-white">
+        <p class="titre">Baptiste
+        Ventura</p>
+        <p class='prof'>Developpeur Web</p>
+      </div>
     </a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto" id="lienNav">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="index.php">Index</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="vue/other/profil.php">Profil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="vue/other/autreTravaux.php">Travaux</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="html/contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
+    <!-- <div class="navbarPerso col-5">     -->
+      <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto navbarPerso" id="lienNav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.php">Index</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="vue/other/profil.php">Profil</a>
+            <a class="nav-link " href="vue/other/profil.php"><i class="material-icons">account_circle</i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="vue/other/autreTravaux.php">Travaux</a>
+            <a class="nav-link " href="vue/other/autreTravaux.php"><i class="material-icons">work</i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="html/contact.html">Contact</a>
+            <a class="nav-link " href="html/contact.html"><i class="material-icons">mail</i></a>
+          </li>
+        </ul>
+      </div>
+    <!-- </div> -->
 
   </nav>
   <?php if(isset($_SESSION['prenom'])){ ?>
