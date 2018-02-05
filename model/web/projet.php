@@ -2,7 +2,7 @@
   include 'connexion.php';
   function displayProjet($id){
     global $bdd;
-    $displayProjet = $bdd ->query('SELECT webID ,titre, overview,resume,texte, chemin, cheminExemple from travauxWeb where webID = '.$id.'');
+    $displayProjet = $bdd->query("SELECT webID ,titre, overview,resume,texte, chemin, cheminExemple from travauxWeb where webID = $id");
     return $displayProjet->fetch();
   }
   function modificationProjet($titre, $resume, $texte){

@@ -4,13 +4,11 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
       <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/main.css">
       <link rel="icon" type="image/png" href=".png" />
-      <script src="jquery-3.2.1.js"></script>
       <title>Index</title>
     </head>
     <body>
@@ -26,7 +24,7 @@
 
       <main class="container-fluid mt-5 bg-faded">
         <section class="container" id="présentation">
-          <section class="row">
+          <section class="row justify-content-around">
             <section class="card d-flex align-items-center col-12 col-lg-5 bg-faded mt-3">
               <img src="img/index/portrait.png" class="rounded-circle w-50" alt="portrait">
               <h2>Developpeur Web/Level designer</h2>
@@ -46,7 +44,7 @@
               <img class="rounded-circle w-50" src="img/index/art.jpg" alt="image montrant un chevalier dessiner à l'encre">
               <h3>Travaux Graphiques</h3>
               <p>C'est une galerie de mes différents travaux "artistiques" personnels.</p>
-              <form class="" action="" method="post">
+              <form class="" action="control/art/controlDessin.php" method="post">
                 <input class="btn btn-primary mb-2" type="submit" name="dessin" value="Mes Dessins">
               </form>
             </section>
@@ -60,7 +58,7 @@
               </form>
             </section>
 
-            <section class="card d-flex align-items-center col-12 col-lg-5 bg-faded mt-3">
+            <section class="card d-flex align-items-center col-12 col-lg-5 bg-faded mt-3 mb-3">
               <h3>Contact</h3>
               <p>Adresse Mail : baptiste.ventura@neuf.fr</p>
               <p>Numéro Téléphone : +33 (0)6 42 62 80 01</p>

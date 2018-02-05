@@ -8,37 +8,50 @@
       <link rel="stylesheet" href="../../css/normalize.css">
       <link rel="stylesheet" href="../../css/main.css">
       <link rel="stylesheet" href="../../bootstrap4/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
       <link rel="icon" type="image/png" href=".png" />
       <title><?php echo $projet['titre'] ?></title>
     </head>
     <body>
-      <header class="row d-flex align-items-center justify-content-center">
+      <header class="row d-flex align-items-center justify-content-center bg-inverse col-12 mx-auto">
+        <script type="text/javascript" src='js/main.js'>
+
+        </script>
         <nav class="navbar navbar-toggleable-md navbar-light col-12">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler navbar-toggler-right btn-primary mt-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand row d-flex align-items-center" href="">
-            <img src="../../img/header/logoLoup.tif" class="col-4 col-lg-6" id="logoSite" alt="logo noir et blanc en forme de loup">
-            <h1 class="col-4 col-lg-4">Baptiste <br>
-            Ventura</h1>
+            <img src="../../img/index/portrait.png" class="rounded-circle col-2 col-lg-2" id="logoSite" alt="portrait de moi même">
+            <div class="col-4 col-lg-4 text-white">
+              <p class="titre">Baptiste
+              Ventura</p>
+              <p class='prof'>Developpeur Web</p>
+            </div>
           </a>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto" id="lienNav">
-              <li class="nav-item">
-                <a class="nav-link" href="../../index.php">Index</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../index.php?test">Web</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../construction.html">Arts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="controlListeJeux.php">Jeux Video</a>
-              </li>
-            </ul>
-          </div>
+          <!-- <div class="navbarPerso col-5">     -->
+            <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto navbarPerso" id="lienNav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.php">Index</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../vue/other/profil.php">Profil</a>
+                  <a class="nav-link " href="../../vue/other/profil.php"><i class="material-icons">account_circle</i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../vue/other/autreTravaux.php">Travaux</a>
+                  <a class="nav-link " href="../../vue/other/autreTravaux.php"><i class="material-icons">work</i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../html/contact.html">Contact</a>
+                  <a class="nav-link " href="../../html/contact.html"><i class="material-icons">mail</i></a>
+                </li>
+              </ul>
+            </div>
+          <!-- </div> -->
 
         </nav>
         <?php if(isset($_SESSION['prenom'])){ ?>
@@ -50,15 +63,16 @@
       <?php } ?>
       </header>
 
-      <main class="container-fluid mt-5 bg-faded d-flex justify-content-around align-items-center">
+
+      <main class="container-fluid m-5 bg-faded d-flex justify-content-around align-items-center">
           <section>
             <article class="col-md-12 col-lg-7 d-inline-block align-top">
               <article class="mb-5 align-top d-flex justify-content-around flex-wrap">
                 <?php if (!empty($projet['imageDetail1'])): ?>
-                  <img class='col-md-12 col-lg-5 mt-2' src="<?php echo $projet['imageDetail1'] ?>" alt="image site">
+                  <img class='col-md-12 col-lg-5 mt-2 h-25' src="<?php echo $projet['imageDetail1'] ?>" alt="image site">
                 <?php endif; ?>
                 <?php if (!empty($projet['imageDetail2'])): ?>
-                  <img class='col-md-12 col-lg-5 mt-2' src="<?php echo $projet['imageDetail2'] ?>" alt="image site">
+                  <img class='col-md-12 col-lg-5 mt-2 h-25' src="<?php echo $projet['imageDetail2'] ?>" alt="image site">
                 <?php endif; ?>
                 <?php if (!empty($projet['imageDetail3'])): ?>
                   <img class='col-md-12 col-lg-5 mt-2' src="<?php echo $projet['imageDetail3'] ?>" alt="image site">
@@ -68,6 +82,9 @@
             <article class="col-md-12 col-lg-4 d-inline-block">
               <h2><?php echo $projet['titre']; ?></h2>
               <p><?php echo $projet['texte'];?></p>
+              <?php if (!empty($projet['chemin'])): ?>
+                <a href="<?php echo $projet['chemin'] ?>">Lien vers le jeu</a>
+              <?php endif; ?>
             </article>
             <?php
             if (isset($_SESSION['prenom'])){
@@ -88,31 +105,20 @@
             </form>
           </section>
       </main>
-      <footer class="row d-flex justify-content-center align-items-center bg-inverse">
+      <footer class="mx-auto row d-flex justify-content-center align-items-center bg-inverse">
         <p class="col-12 col-lg-3 text-white">2017 - Baptiste Ventura</p>
         <ul class="col-4 col-lg-2 offset-lg-7 mt-2 row">
           <li class="col-4 listFooter" >
             <a href="https://www.linkedin.com/in/baptiste-ventura-a17b0083/">
-              <img class="w-100" src="../../img/footer/linkdin.png" alt="linkdin">
+              <img class="w-100 h-100" src="../../img/footer/linkdin.png" alt="linkdin">
             </a>
           </li>
           <li class="col-4 listFooter">
             <a href="https://twitter.com">
-              <img class="w-100" src="../../img/footer/twitter.png" alt="twitter">
+              <img class="w-100 h-100" src="../../img/footer/twitter.png" alt="twitter">
             </a>
           </li>
         </ul>
-        <?php if(!isset($_SESSION['prenom'])){ ?>
-        <section>
-          <form class="" action="" method="post">
-            <label class='text-primary' for="">pseudo</label>
-            <input type="text" name="prenom" value=""><br>
-            <label class='text-primary' for="">password</label>
-            <input type="password" name="password" value=""><br>
-            <input type="submit" name="connexion" value="connexion">
-          </form>
-        </section>
-        <?php } ?>
       </footer>
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
